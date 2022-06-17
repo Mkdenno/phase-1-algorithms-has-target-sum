@@ -1,14 +1,14 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
-  // declare an array numbers
-const numbers=[];
-// iterate over array
+const seeNumbers={};
+
 for(const item of array){
-  // n step
+
  const complement=target-item;
-//  n step
-  if(numbers[complement])return true;
-  numbers[item]=true
+
+  if(seeNumbers[complement])return true;
+
+  seeNumbers[item]=true
 
 }
 return false;
